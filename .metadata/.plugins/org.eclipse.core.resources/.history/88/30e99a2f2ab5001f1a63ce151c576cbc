@@ -1,0 +1,13 @@
+package entities;
+
+public class BusinnesAccount extends Account {
+	private Double loanLimit;
+	
+	
+	
+	
+	
+	public void loan(Double amont) {
+		
+	}
+}

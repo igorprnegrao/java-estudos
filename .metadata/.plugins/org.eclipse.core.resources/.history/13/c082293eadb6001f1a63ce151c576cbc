@@ -1,0 +1,14 @@
+package entities;
+
+
+
+public class Circle extends Shape {
+
+	
+	
+	@Override
+	public Double Area() {
+		return null;
+	}
+	
+}

@@ -1,0 +1,14 @@
+package entities;
+
+public  class Individual extends TaxPayer {
+
+	
+	
+	
+	@Override
+	public Double tax() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

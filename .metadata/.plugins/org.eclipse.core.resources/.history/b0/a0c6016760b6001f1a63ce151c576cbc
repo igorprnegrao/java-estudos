@@ -1,0 +1,16 @@
+package application;
+
+import entities.Account;
+import entities.BusinnesAccount;
+import entities.SavingsAccount;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Account acc1 = new Account(1001, "alex", 1000.00);
+		Account acc2 = new SavingsAccount(1002, "maria, 1000.0, 0.001);
+		
+		
+	}
+	
+}

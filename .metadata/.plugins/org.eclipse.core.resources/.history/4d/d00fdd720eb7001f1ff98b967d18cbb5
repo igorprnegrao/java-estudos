@@ -1,0 +1,18 @@
+package entities;
+
+public class Company extends TaxPayer {
+
+	private Integer numberOfEmployees;
+	
+	public Company() {
+	}
+	
+	
+	
+	@Override
+	public Double tax() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

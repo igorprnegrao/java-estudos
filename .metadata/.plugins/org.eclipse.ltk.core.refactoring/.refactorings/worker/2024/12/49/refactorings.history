@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;worker&apos;&#x0A;- Original project: &apos;worker&apos;&#x0A;- Original element: &apos;worker/src/entities.enums&apos;" description="Delete element" element1="/src&lt;entities.enums" element2="/src&lt;entities" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1733166402901" subPackages="false" version="1.0"/>
+</session>
