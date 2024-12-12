@@ -7504,3 +7504,6 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/abstract3/src
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-11 12:07:37.587
 !MESSAGE Classpath changed for project: trycath01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-12 12:34:59.703
+!MESSAGE Classpath changed for project: exceptionRuim
