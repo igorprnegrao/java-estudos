@@ -52,7 +52,7 @@ public class Reservation {
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 	}
 
-	//para o metodo propagar a exception add throws na assinatura 
+	//para o metodo propagar a exception add a cláusula  throws na assinatura 
 	public void updateDates(Date checkin, Date checkout) throws DomainException{
 		Date now = new Date();
 		//condicional regra de negocio checkin e checkout não deve ser antes da data atual 
