@@ -4,9 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-
 public class Reservation {
-	
 	private Integer roomNumber;
 	private Date checkin;
 	private Date checkout;
@@ -53,9 +51,22 @@ public class Reservation {
 	}
 
 
-	public void updateDates(Date checkin, Date checkout) {
+	public String updateDates(Date checkin, Date checkout) {
+		Date now = new Date();
+		//condicional regra de negocio checkin e checkout não deve ser antes da data atual 
+		//e checkout não deve ser antes do checkin
+		if (checkin.before(now) || checkout.before(now) ) {
+			return "Error in reservation: Check-out date must be after check-in date";
+		} 
+		
+		if (!checkout.after(checkin)) {
+			return "Check-out date must be after check-in date";
+		} 
+		
 		this.checkin = checkin;
 		this.checkout = checkout;
+		//se retornar nulo é pq não deu nenhum erro
+		return null;
 	}
 	
 	@Override
@@ -64,5 +75,4 @@ public class Reservation {
 				+ roomNumber + ", Check-in: " + sdf.format(checkin)  
 				+ ", check-out: " +  sdf.format(checkout) +", " + duration() + " nights." ;
 	}
-	
 }
