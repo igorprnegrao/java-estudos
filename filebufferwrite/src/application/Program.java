@@ -11,7 +11,7 @@ public class Program {
 		
 		String path = "/Users/igornegrao/Documents/java-estudos/arquivo1/out.txt"; 
 		
-		try(BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+		try(BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
 			for (String line : lines) {
 				bw.write(line);
 				bw.newLine();
