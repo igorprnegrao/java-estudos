@@ -8342,3 +8342,67 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-18 01:30:56.828
 !MESSAGE Classpath changed for project: teste01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-18 01:45:25.834
+!MESSAGE Classpath changed for project: exer01
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-18 02:05:27.906
+!MESSAGE org.eclipse.jface.text.BadLocationException
+!STACK 0
+java.io.IOException: org.eclipse.jface.text.BadLocationException
+	at org.eclipse.lsp4e.internal.CharsInputStream.refillByteBuffer(CharsInputStream.java:290)
+	at org.eclipse.lsp4e.internal.CharsInputStream.read(CharsInputStream.java:221)
+	at java.base/java.io.InputStream.read(InputStream.java:220)
+	at org.eclipse.core.internal.content.LazyInputStream.loadBlock(LazyInputStream.java:147)
+	at org.eclipse.core.internal.content.LazyInputStream.ensureAvailable(LazyInputStream.java:86)
+	at org.eclipse.core.internal.content.LazyInputStream.read(LazyInputStream.java:185)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186)
+	at java.base/java.io.Reader.read(Reader.java:269)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1610)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1589)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:1384)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:1157)
+	at org.apache.commons.io.IOUtils.toString(IOUtils.java:3153)
+	at org.apache.commons.io.IOUtils.toString(IOUtils.java:3133)
+	at org.eclipse.wb.internal.core.editor.describer.JavaSourceUiDescriber.describe(JavaSourceUiDescriber.java:50)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.describe(ContentTypeCatalog.java:295)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.collectMatchingByContents(ContentTypeCatalog.java:266)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.internalFindContentTypesForSubset(ContentTypeCatalog.java:490)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.internalFindContentTypesFor(ContentTypeCatalog.java:549)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.findContentTypesFor(ContentTypeCatalog.java:383)
+	at org.eclipse.core.internal.content.ContentTypeMatcher.findContentTypesFor(ContentTypeMatcher.java:57)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:1397)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:286)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:288)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
+	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:40)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:66)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:702)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+Caused by: org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:774)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.lsp4e.internal.CharsInputStream.refillByteBuffer(CharsInputStream.java:264)
+	... 50 more
