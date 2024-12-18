@@ -10,11 +10,11 @@ public class RentalServices {
 		private Double pricePerHour;
 		private Double pricePerDay;
 		
-		private BrazilTaxServices taxServices;
+		private TaxService taxServices;
 		
 		//construtor default não vai ser implementado forçando a passagem dos argumentos
 
-		public RentalServices(Double pricePerHour, Double pricePerDay, BrazilTaxServices taxServices) {
+		public RentalServices(Double pricePerHour, Double pricePerDay, TaxService taxServices) {
 			
 			this.pricePerHour = pricePerHour;
 			this.pricePerDay = pricePerDay;
@@ -42,7 +42,7 @@ public class RentalServices {
 		}
 
 
-		public BrazilTaxServices getTaxServices() {
+		public TaxService getTaxServices() {
 			return taxServices;
 		}
 

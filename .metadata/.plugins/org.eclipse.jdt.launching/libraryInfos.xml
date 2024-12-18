@@ -2,4 +2,5 @@
 <libraryInfos>
     <libraryInfo home="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home" version="21.0.4"/>
     <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home" version="22.0.2"/>
+    <libraryInfo home="/Users/igornegrao/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home" version="23.0.1"/>
 </libraryInfos>
