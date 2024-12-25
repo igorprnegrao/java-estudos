@@ -1,4 +1,2 @@
 INDEX VERSION 1.134+/Users/igornegrao/Documents/java-estudos/.metadata/.plugins/org.eclipse.jdt.core
-4091702570.index
-3052999645.index
 1865797976.index
