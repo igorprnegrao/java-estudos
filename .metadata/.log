@@ -9408,3 +9408,9 @@ END
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-28 22:18:13.746
 !MESSAGE Started org.springframework.tooling.boot.ls LS process 1587
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-28 22:28:11.638
+!MESSAGE Classpath changed for project: jdbc6
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-28 22:28:19.506
+!MESSAGE Classpath changed for project: jdbc5
