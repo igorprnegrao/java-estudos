@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 import db.DB;
+import db.DbIntegretyException;
 
 public class Program {
 
@@ -25,8 +26,8 @@ public class Program {
 			
 			System.out.println("Done! Rows affected: "+ rowsAffected);
 		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
+			throw new DbIntegretyException(e.getMessage());
+			} finally {
 			DB.closeStatement(st);
 			DB.closeConnection();
 		}
