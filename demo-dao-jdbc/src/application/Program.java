@@ -32,11 +32,20 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		
+		/*
 		System.out.println("=== TEST 4: seller INSERT ===");
 		Seller newsSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
 		sellerDao.insert(newsSeller);
 		System.out.println("Inserted! new ID = " + newsSeller.getId());
+		**/
+		
+		System.out.println("=== TEST 5: seller UPDATE ===");
+		seller = sellerDao.findById(6);
+		seller.setEmail("alexpink@gmail.com");
+		sellerDao.update(seller);
+		System.out.println("UPDATE completed");
+		
+		
 	}
 
 }
