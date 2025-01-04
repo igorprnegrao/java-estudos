@@ -81,11 +81,13 @@
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item key="renameSubpackages" value="false"/>
-		<item key="updateTextualMatches" value="false"/>
+		<item key="updateTextualMatches" value="true"/>
 		<item key="updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
 		<item key="updateSimilarElements" value="false"/>
 		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="renameGetter" value="true"/>
+		<item key="renameSetter" value="true"/>
 	</section>
 	<section name="SourceActionDialog.constructors">
 		<item key="VisibilityModifier" value="1"/>
@@ -153,5 +155,7 @@
 	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="8"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 </section>
