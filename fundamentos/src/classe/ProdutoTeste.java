@@ -5,6 +5,9 @@ public class ProdutoTeste {
 		public static void main(String[] args) {
 		
 			Produto p1 = new Produto();
+			double desconto = p1.descontoProduto(100, 0.20);
+			System.out.println("Preço do método com desconto R$ " + desconto);
+			
 			
 			p1.nome= "Notebook";
 			p1.preco = 4356.89;
