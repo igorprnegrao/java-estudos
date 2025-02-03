@@ -5,12 +5,19 @@ public class Produto {
 	
 	String nome;
 	double preco;
-	double desconto;
+	static double desconto = 0.25;
 	
-	double descontoProduto(double preco, double desconto) {
+	Produto(){
+	}
+	
+	Produto(String nome, double preco){
+		this.nome = nome;
+		this.preco = preco;
+	}
+	
+	double descontoProduto() {
 		
-		
-		return  preco - (preco * desconto);
+		return  preco * (1 - desconto);
 	}
 	
 }

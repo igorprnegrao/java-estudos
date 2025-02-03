@@ -14,6 +14,7 @@ public class DataTeste {
 		dt2.mes = 12;
 		dt2.ano = 2020;
 		
+		
 		System.out.printf("Data 01: %d/%d/%d%n", dt1.dia, dt1.mes, dt1.ano);
 		System.out.printf("Data 02: %d/%d/%d%n", dt2.dia, dt2.mes, dt2.ano);
 		
@@ -22,6 +23,13 @@ public class DataTeste {
 		dt3.mes = 11;
 		dt3.ano = 1985;
 		System.out.println(dt3.obterDataFormatada());
+		
+		Data dt4 = new Data(06, 8, 1984);
+		System.out.println(dt4.obterDataFormatada());
+		
+		Data dt5 = new Data();
+		
+		System.out.println(dt5.obterDataFormatada());
 	}
 
 }
