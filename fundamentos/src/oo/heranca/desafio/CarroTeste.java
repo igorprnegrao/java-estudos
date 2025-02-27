@@ -4,10 +4,23 @@ public class CarroTeste {
 
 	public static void main(String[] args) {
 		
-		Civic civic = new Civic();
+		Carro civic = new Civic(300);
 		civic.acelerar(civic);
-		Tiggo5x tiggo5x = new Tiggo5x();
+		civic.frear(civic);
+		civic.frear(civic);
+		civic.frear(civic);
+		civic.frear(civic);
 		
+	
+		
+		
+		
+		Carro tiggo5x = new Tiggo5x(300);
+		tiggo5x.acelerar(tiggo5x);
+		tiggo5x.acelerar(tiggo5x);
+		tiggo5x.acelerar(tiggo5x);
+		
+		System.out.println(tiggo5x.velocidade);
 		System.out.println(civic.velocidade);
 	}
 
